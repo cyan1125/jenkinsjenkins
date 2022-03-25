@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  jenkins:
+    build: ./jenkins_home
+    ports:
+      - 8080:8080
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+    tty: true
